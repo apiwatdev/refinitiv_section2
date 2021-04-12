@@ -1,0 +1,11 @@
+<div>
+  <input [(ngModel)]="search" type="text"  name="search"  (ngModelChange)="filterCategories($event)">
+  <table>
+    <tbody>
+      <tr *ngFor="let category of categoriesDisplay">
+        <td>{{category}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<router-outlet></router-outlet>

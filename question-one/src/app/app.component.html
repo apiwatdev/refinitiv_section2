@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="first boder-1">
+        <input [(ngModel)]="addNumber" name="addNumber" (ngModelChange)="onNumberChange($event)">
+
+    <p>Value: {{ addNumber }}</p>
+  </div>
+  
+  <div class="second boder-1">
+    <select  [(ngModel)]="calculator" (ngModelChange)="onNumberChange($event)">
+      <option value="isPrime">isPrime</option>
+      <option value="isFibonacci">isFibonacci</option>
+    </select>
+  </div>
+  <div class="third boder-1">{{correctNumber}}
+  </div>
+</div>
